@@ -1,0 +1,350 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Awesome</title>
+<meta name="generator" content="WYSIWYG Web Builder 18 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/STGEMMAS5.css" rel="stylesheet">
+<link href="css/index_with_breakpoint.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery.ui.effect.min.js"></script>
+<script src="wb.panel.min.js"></script>
+<script src="wwb18.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#home']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_home').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#news']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_news').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollnews()
+   {
+      var $obj = $("#wb_news");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollnews();
+   $(window).scroll(function(event)
+   {
+      onScrollnews();
+   });
+   $("a[href*='#team']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_team').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollteam()
+   {
+      var $obj = $("#wb_team");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollteam();
+   $(window).scroll(function(event)
+   {
+      onScrollteam();
+   });
+   $("a[href*='#contact']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_contact').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollcontact()
+   {
+      var $obj = $("#wb_contact");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollcontact();
+   $(window).scroll(function(event)
+   {
+      onScrollcontact();
+   });
+   $("#PanelMenu1").panel({animate: true, animationDuration: 200, animationEasing: 'linear', dismissible: true, display: 'push', position: 'top', toggle: true});
+   $("#PanelMenu1_markup ul li a").click(function(event)
+   {
+       $.panel.hide($("#PanelMenu1_panel"));
+   });
+   var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+   if (iOS)
+   {
+      $('#wb_home').css('background-attachment', 'scroll');
+   }
+});
+</script>
+</head>
+<body>
+<div id="wb_header">
+<div id="header">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+<div id="wb_headerMenu">
+<ul id="headerMenu" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link headerMenu-effect" href="./about-us.html#home" target="_self">Home</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link headerMenu-effect" href="./about-us.html#LayoutGrid5" target="_self">About&nbsp;Us</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link headerMenu-effect" href="#" target="_self">History</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link headerMenu-effect" href="#" target="_self">Sports</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link headerMenu-effect" href="" target="_self">Policies</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link headerMenu-effect" href="#contactUs" target="_self">Contact&nbsp;Us</a>
+</li>
+</ul>
+
+</div>
+<div id="wb_PanelMenu1">
+<a href="#PanelMenu1_markup" id="PanelMenu1">
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"></span>
+</a>
+<div id="PanelMenu1_markup">
+<ul role="menu">
+<li role="menuitem"><a href="./about-us.html#home" class="nav-link">Home</a></li>
+<li role="menuitem"><a href="./about-us.html#LayoutGrid5" class="nav-link">About Us</a></li>
+<li role="menuitem"><a href="#" class="nav-link">History</a></li>
+<li role="menuitem"><a href="#" class="nav-link">Sports</a></li>
+<li role="menuitem"><a href="" class="nav-link">Policies</a></li>
+<li role="menuitem"><a href="#contactUs" class="nav-link">Contact Us</a></li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_home">
+<div id="home">
+<div class="col-1">
+<div id="wb_homeText">
+<p style="font-size:15px;line-height:16.5px;"><span style="font-size:32px;line-height:36px;font-weight:bold;">Stgemmas Primary School</span></p>
+<p style="font-size:16px;line-height:18px;">&nbsp;</p>
+</div>
+<div id="wb_homeShape">
+<img src="images/img0002.png" id="homeShape" alt="" width="357" height="44">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_CardContainer1">
+<div id="CardContainer1">
+<div id="wb_Card1" class="card">
+   <div id="Card1-card-body">
+      <div id="Card1-card-item0"><svg class="svg-icon" viewBox="0 0 212 212" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M65 8 C78 3, 92 0, 106 0 C121 0, 134 3, 147 8 C161 14, 172 21, 181 31 C191 40, 198 52, 204 65 C209 78, 212 92, 212 106 C212 120, 209 134, 204 147 C198 160, 191 171, 181 181 C172 190, 161 198, 147 204 C134 209, 121 212, 106 212 C92 212, 78 209, 65 204 C52 198, 41 190, 31 181 C22 171, 14 160, 9 147 C3 134, 0 120, 0 106 C0 92, 3 78, 9 65 C14 52, 22 40, 31 31 C41 21, 52 14, 65 8 Z M149 26 C136 19, 121 15, 106 15 C91 15, 77 19, 64 26 L87 49 C93 46, 100 45, 106 45 C113 45, 120 46, 126 49 Z M26 149 L49 126 C47 119, 46 113, 46 106 C46 99, 47 93, 49 86 L26 63 C19 77, 15 91, 15 106 C15 121, 19 135, 26 149 Z M64 186 C77 193, 91 197, 106 197 C121 197, 136 193, 149 186 L126 163 C120 165, 113 167, 106 167 C100 167, 93 165, 87 163 Z M74 138 C83 147, 94 151, 106 151 C119 151, 130 147, 138 138 C147 129, 152 118, 152 106 C152 93, 147 83, 138 74 C130 65, 119 61, 106 61 C94 61, 83 65, 74 74 C65 83, 61 93, 61 106 C61 118, 65 129, 74 138 Z M164 126 L187 149 C194 135, 197 121, 197 106 C197 91, 194 77, 187 63 L164 86 C166 93, 167 99, 167 106 C167 113, 166 119, 164 126"/>
+</svg>
+</div>
+      <div id="Card1-card-item1">Welcome</div>
+      <hr id="Card1-card-item2">
+      <div id="Card1-card-item3">Welcome to Stgemmas Prmary School</div>
+      <div id="Card1-card-item4">Read More</div>
+   </div>
+</div>
+<div id="wb_Card2" class="card">
+   <div id="Card2-card-body">
+      <div id="Card2-card-item0"><svg class="svg-icon" viewBox="0 0 212 212" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M197 107 C185 88, 170 74, 152 65 C157 73, 159 82, 159 91 C159 106, 154 118, 144 129 C133 139, 121 144, 106 144 C92 144, 79 139, 69 129 C58 118, 53 106, 53 91 C53 82, 56 73, 61 65 C42 74, 27 88, 15 107 C26 123, 39 136, 55 145 C71 155, 88 160, 106 160 C125 160, 142 155, 158 145 C174 136, 187 123, 197 107 Z M110 65 C111 64, 112 63, 112 61 C112 60, 111 58, 110 57 C109 56, 108 55, 106 55 C96 55, 88 59, 81 66 C74 73, 70 82, 70 91 C70 93, 71 94, 72 95 C73 97, 74 97, 76 97 C78 97, 79 97, 80 95 C81 94, 82 93, 82 91 C82 85, 84 79, 89 74 C94 69, 100 67, 106 67 C108 67, 109 66, 110 65 Z M210 98 C212 101, 212 104, 212 107 C212 109, 212 112, 210 115 C199 133, 184 147, 165 158 C147 169, 127 175, 106 175 C86 175, 66 169, 47 158 C29 147, 14 133, 3 115 C1 112, 0 109, 0 107 C0 104, 1 101, 3 98 C14 80, 29 66, 47 55 C66 44, 86 38, 106 38 C127 38, 147 44, 165 55 C184 66, 199 80, 210 98"/>
+</svg>
+</div>
+      <div id="Card2-card-item1">Our Vision</div>
+      <hr id="Card2-card-item2">
+      <div id="Card2-card-item3">To promote Qualty education<br>Read More</div>
+      <div id="Card2-card-item4">Read More</div>
+   </div>
+</div>
+<div id="wb_Card3" class="card">
+   <div id="Card3-card-body">
+      <div id="Card3-card-item0"><svg class="svg-icon" viewBox="0 0 212 212" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M209 1 C212 3, 213 6, 212 9 L182 191 C182 193, 180 195, 178 196 C177 196, 176 197, 174 197 C174 197, 173 197, 172 196 L118 174 L89 209 C88 211, 86 212, 84 212 C83 212, 82 212, 81 211 C79 211, 78 210, 77 209 C76 207, 76 206, 76 204 L76 163 L178 38 L52 147 L5 128 C2 127, 1 125, 0 122 C0 118, 1 116, 4 115 L201 1 C202 0, 203 0, 205 0 C206 0, 208 0, 209 1"/>
+</svg>
+</div>
+      <div id="Card3-card-item1">Mission</div>
+      <hr id="Card3-card-item2">
+      <div id="Card3-card-item3">To create environment conducive to teaching and learning<br>Read More</div>
+      <div id="Card3-card-item4">Read More</div>
+   </div>
+</div>
+</div>
+</div>
+<div id="wb_news">
+<div id="news">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_newsHeading">
+<h1 id="newsHeading">Stgemmas Primary News</h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_WrapTextLayoutGrid">
+<div id="WrapTextLayoutGrid">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="WrapText1">
+<div id="WrapText1-float">
+</div>
+<div class="WrapText1"> </div>
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="WrapText2">
+<div id="WrapText2-float">
+<div id="wb_WrapText2Image">
+<img src="images/IMG-20230926-WA0011.jpg" id="WrapText2Image" alt="" width="249" height="140">
+</div>
+</div>
+<div class="WrapText2"> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_team">
+<div id="team">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_teamHeading">
+<h1 id="teamHeading">Our School Team</h1>
+</div>
+<div id="wb_CardContainer2">
+<div id="CardContainer2">
+<div id="wb_teamCard1" class="card">
+   <div id="teamCard1-card-body">
+      <img id="teamCard1-card-item0" src="images/Lenka.PNG" width="187" height="190" alt="" title="">
+      <div id="teamCard1-card-item1">Lenka Ramahali</div>
+      <hr id="teamCard1-card-item2">
+      <div id="teamCard1-card-item3">Principal</div>
+   </div>
+</div>
+<div id="wb_teamCard2" class="card">
+   <div id="teamCard2-card-body">
+      <img id="teamCard2-card-item0" src="images/Vuyo.PNG" width="222" height="196" alt="" title="">
+      <div id="teamCard2-card-item1">Vuyo</div>
+      <hr id="teamCard2-card-item2">
+      <div id="teamCard2-card-item3">HOD</div>
+   </div>
+</div>
+<div id="wb_teamCard3" class="card">
+   <div id="teamCard3-card-body">
+      <img id="teamCard3-card-item0" src="images/Nthabiseng.PNG" width="206" height="199" alt="" title="">
+      <div id="teamCard3-card-item1"></div>
+      <hr id="teamCard3-card-item2">
+      <div id="teamCard3-card-item3">Board Member</div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_contact">
+<div id="contact">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_contactHeading">
+<h1 id="contactHeading">Register Now</h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_contacForm">
+<div id="contacForm">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+<label for="contactName" id="contactLabel1">Name</label>
+<input type="text" id="contactName" name="name" value="" spellcheck="false">
+<label for="contactEmail" id="contactLabel2">Email</label>
+<input type="text" id="contactEmail" name="email" value="" spellcheck="false">
+<label for="contactOption" id="contactLabel3">Select an option</label>
+<select name="option" size="1" id="contactOption" autocomplete="off">
+<option selected value="option-1">Option 1</option>
+<option value="option-2">Option 2</option>
+<option value="option-3">Option 3</option>
+</select>
+<label for="contactMessage" id="contactLabel4">Message</label>
+<textarea name="message" id="contactMessage" rows="4" cols="73" autocomplete="off" spellcheck="false"></textarea>
+<div id="wb_contactUpdates">
+<input type="checkbox" role="switch" name="" id="contactUpdates" value="" checked>
+<label id="contactUpdates-label" for="contactUpdates">
+<span id="contactUpdates-inner"></span>
+<span id="contactUpdates-switch"></span>
+</label>
+</div>
+<label for="contactUpdates" id="contactLabel5"></label>
+<hr id="contactSpacer">
+<input type="submit" id="contactButton" name="" value="Submit">
+</div>
+<div class="col-3">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_footer">
+<div id="footer">
+<div class="row">
+<div class="col-1">
+<div id="wb_footerText">
+<p>Copyright © 2023 Stgemmas Primary School.&nbsp; All Rights Reserved</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="upStickyLayer">
+<div id="wb_upIcon">
+<a href="./about-us.html#home"><div id="upIcon"><i class="fa fa-angle-up"></i></div></a></div>
+</div>
+</body>
+</html>
