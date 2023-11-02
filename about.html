@@ -1,0 +1,425 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>About</title>
+<meta name="generator" content="WYSIWYG Web Builder 18 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/STGEMMAS3.css" rel="stylesheet">
+<link href="css/about.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery.ui.effect.min.js"></script>
+<script src="skrollr.min.js"></script>
+<script src="wwb18.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#wb_CardService1').addClass('visibility-hidden');
+   $('#wb_CardService2').addClass('visibility-hidden');
+   $('#wb_CardService3').addClass('visibility-hidden');
+   $('#wb_CardService4').addClass('visibility-hidden');
+   $("a[href*='#home']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_home').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#facts']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_facts').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollfacts()
+   {
+      var $obj = $("#wb_facts");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollfacts();
+   $(window).scroll(function(event)
+   {
+      onScrollfacts();
+   });
+   $("a[href*='#factsCards']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_factsCards').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#services']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_services').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollservices()
+   {
+      var $obj = $("#wb_services");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollservices();
+   $(window).scroll(function(event)
+   {
+      onScrollservices();
+   });
+   $("a[href*='#serivcesCards']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_serivcesCards').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#contactUs']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_contactUs').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollcontactUs()
+   {
+      var $obj = $("#wb_contactUs");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollcontactUs();
+   $(window).scroll(function(event)
+   {
+      onScrollcontactUs();
+   });
+   function skrollrInit()
+   {
+      skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
+   }
+   skrollrInit();
+   function onScrollBookmark1()
+   {
+      var $obj = $("#wb_Bookmark1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_CardService1', 'animate-fade-in-up', 0, 1000);
+      }
+   }
+   onScrollBookmark1();
+   $(window).scroll(function(event)
+   {
+      onScrollBookmark1();
+   });
+   function onScrollBookmark2()
+   {
+      var $obj = $("#wb_Bookmark2");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_CardService2', 'animate-fade-in-up', 0, 1000);
+      }
+   }
+   onScrollBookmark2();
+   $(window).scroll(function(event)
+   {
+      onScrollBookmark2();
+   });
+   function onScrollBookmark3()
+   {
+      var $obj = $("#wb_Bookmark3");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_CardService3', 'animate-fade-in-up', 0, 1000);
+      }
+   }
+   onScrollBookmark3();
+   $(window).scroll(function(event)
+   {
+      onScrollBookmark3();
+   });
+   function onScrollBookmark4()
+   {
+      var $obj = $("#wb_Bookmark4");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_CardService4', 'animate-fade-in-up', 0, 1000);
+      }
+   }
+   onScrollBookmark4();
+   $(window).scroll(function(event)
+   {
+      onScrollBookmark4();
+   });
+});
+</script>
+</head>
+<body>
+<div id="wb_home">
+<div id="home">
+<div class="col-1">
+<div id="wb_homeText">
+<p style="font-size:15px;line-height:16.5px;"><span style="font-size:32px;line-height:36px;font-weight:bold;">About Us</span></p>
+<p style="font-size:16px;line-height:18px;">&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_facts">
+<div id="facts">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_reviewsHeading3" style="display:inline-block;width:100%;z-index:1;">
+<h1 id="reviewsHeading3">OUR VISION</h1>
+</div>
+<div id="wb_reviewsText2">
+<br>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_factsCards">
+<div id="factsCards">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Card1" style="display:flex;width:100%;z-index:3;" class="card" data--250-bottom="transform: scale(1.0,1.0);" data-333-bottom="transform: scale(0.5,0.5);">
+   <div id="Card1-card-body">
+      <div id="Card1-card-item0"><svg class="svg-icon" viewBox="0 0 212 212" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M121 64 L121 117 C121 118, 121 119, 120 120 C120 121, 119 121, 118 121 L80 121 C79 121, 78 121, 77 120 C76 119, 76 118, 76 117 L76 110 C76 109, 76 108, 77 107 C78 106, 79 106, 80 106 L106 106 L106 64 C106 63, 107 62, 107 62 C108 61, 109 61, 110 61 L118 61 C119 61, 120 61, 120 62 C121 62, 121 63, 121 64 Z M162 138 C168 128, 171 118, 171 106 C171 94, 168 84, 162 74 C156 64, 148 56, 138 50 C129 44, 118 42, 106 42 C94 42, 84 44, 74 50 C64 56, 56 64, 50 74 C45 84, 42 94, 42 106 C42 118, 45 128, 50 138 C56 148, 64 156, 74 162 C84 167, 94 170, 106 170 C118 170, 129 167, 138 162 C148 156, 156 148, 162 138 Z M185 60 C193 74, 197 89, 197 106 C197 122, 193 138, 185 152 C177 165, 166 177, 152 185 C138 193, 123 197, 106 197 C90 197, 74 193, 61 185 C47 177, 36 165, 27 152 C19 138, 15 122, 15 106 C15 89, 19 74, 27 60 C36 46, 47 35, 61 27 C74 19, 90 15, 106 15 C123 15, 138 19, 152 27 C166 35, 177 46, 185 60"/>
+</svg>
+</div>
+      <div id="Card1-card-item1">About Us</div>
+      <div id="Card1-card-item2"></div>
+      <div id="Card1-card-item3">Learn more ></div>
+   </div>
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_Card2" style="display:flex;width:100%;z-index:4;" class="card" data--250-bottom="transform: scale(1.0,1.0);" data-333-bottom="transform: scale(0.5,0.5);">
+   <div id="Card2-card-body">
+      <div id="Card2-card-item0"><svg class="svg-icon" viewBox="0 0 212 212" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M171 57 L136 91 L136 189 C136 192, 135 196, 132 198 C130 201, 127 202, 123 202 C119 202, 116 201, 114 198 C111 196, 110 192, 110 189 L110 143 L102 143 L102 189 C102 192, 101 196, 98 198 C96 201, 93 202, 89 202 C85 202, 82 201, 80 198 C77 196, 76 192, 76 189 L76 91 L41 57 C39 55, 38 52, 38 49 C38 46, 39 43, 41 41 C43 38, 46 37, 49 37 C52 37, 55 38, 57 41 L84 68 L128 68 L155 41 C157 38, 160 37, 163 37 C166 37, 169 38, 171 41 C173 43, 174 46, 174 49 C174 52, 173 55, 171 57 Z M125 19 C130 24, 133 30, 133 37 C133 45, 130 51, 125 56 C120 61, 113 64, 106 64 C99 64, 92 61, 87 56 C82 51, 80 45, 80 37 C80 30, 82 24, 87 19 C92 13, 99 11, 106 11 C113 11, 120 13, 125 19"/>
+</svg>
+</div>
+      <div id="Card2-card-item1">Sports</div>
+      <div id="Card2-card-item2"></div>
+      <div id="Card2-card-item3">Learn more ></div>
+   </div>
+</div>
+</div>
+</div>
+<div class="col-3">
+<div class="col-3-padding">
+<div id="wb_Card3" style="display:flex;width:100%;z-index:5;" class="card" data--250-bottom="transform: scale(1.0,1.0);" data-333-bottom="transform: scale(0.5,0.5);">
+   <div id="Card3-card-body">
+      <div id="Card3-card-item0"><svg class="svg-icon" viewBox="0 0 212 212" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M167 87 C167 85, 166 83, 165 81 L154 71 C153 69, 151 68, 149 68 C147 68, 145 69, 144 71 L95 119 L69 92 C67 91, 65 90, 63 90 C61 90, 60 91, 58 92 L47 103 C46 104, 45 106, 45 108 C45 110, 46 112, 47 114 L90 156 C92 158, 93 159, 95 159 C98 159, 99 158, 101 156 L165 92 C166 91, 167 89, 167 87 Z M185 60 C193 74, 197 89, 197 106 C197 122, 193 138, 185 152 C177 165, 166 177, 152 185 C138 193, 123 197, 106 197 C90 197, 74 193, 61 185 C47 177, 36 165, 27 152 C19 138, 15 122, 15 106 C15 89, 19 74, 27 60 C36 46, 47 35, 61 27 C74 19, 90 15, 106 15 C123 15, 138 19, 152 27 C166 35, 177 46, 185 60"/>
+</svg>
+</div>
+      <div id="Card3-card-item1">Policies</div>
+      <div id="Card3-card-item2"></div>
+      <div id="Card3-card-item3">Learn more ></div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_services">
+<div id="services">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Heading2" style="display:inline-block;width:100%;z-index:6;">
+<h1 id="Heading2">SCHOOL INFRASTRUCTURE</h1>
+</div>
+<div id="wb_Text2">
+<br>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_serivcesCards">
+<div id="serivcesCards">
+<div class="row">
+<div class="col-1">
+<div id="wb_CardService1" style="display:flex;width:100%;z-index:8;" class="card">
+   <div id="CardService1-card-body">
+      <div id="CardService1-card-item0"><svg class="svg-icon" viewBox="0 0 212 212" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M154 96 L104 146 C102 148, 101 148, 99 148 C97 148, 95 148, 93 146 L58 111 C57 110, 56 108, 56 106 C56 104, 57 102, 58 101 L71 89 C72 87, 74 86, 76 86 C78 86, 80 87, 81 89 L99 106 L131 73 C133 72, 134 71, 136 71 C138 71, 140 72, 142 73 L154 85 C155 87, 156 89, 156 91 C156 93, 155 95, 154 96 Z M162 138 C168 128, 171 118, 171 106 C171 94, 168 84, 162 74 C156 64, 148 56, 138 50 C129 44, 118 42, 106 42 C94 42, 84 44, 74 50 C64 56, 56 64, 50 74 C45 84, 42 94, 42 106 C42 118, 45 128, 50 138 C56 148, 64 156, 74 162 C84 167, 94 170, 106 170 C118 170, 129 167, 138 162 C148 156, 156 148, 162 138 Z M185 60 C193 74, 197 89, 197 106 C197 122, 193 138, 185 152 C177 165, 166 177, 152 185 C138 193, 123 197, 106 197 C90 197, 74 193, 61 185 C47 177, 36 165, 27 152 C19 138, 15 122, 15 106 C15 89, 19 74, 27 60 C36 46, 47 35, 61 27 C74 19, 90 15, 106 15 C123 15, 138 19, 152 27 C166 35, 177 46, 185 60"/>
+</svg>
+</div>
+      <div id="CardService1-card-item1">Liabrary</div>
+      <div id="CardService1-card-item2"></div>
+   </div>
+</div>
+<div id="wb_Bookmark1" style="display:inline-block;width:100%;z-index:9;">
+<div id="Bookmark1" style="visibility:hidden;"></div>
+
+</div>
+</div>
+<div class="col-2">
+<div id="wb_CardService2" style="display:flex;width:100%;z-index:10;" class="card">
+   <div id="CardService2-card-body">
+      <div id="CardService2-card-item0"><svg class="svg-icon" viewBox="0 0 212 212" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M43 151 C37 151, 33 150, 29 146 C25 142, 24 138, 24 132 L24 49 C24 44, 25 40, 29 36 C33 32, 37 30, 43 30 L171 30 C176 30, 181 32, 185 36 C188 40, 190 44, 190 49 L190 132 C190 138, 188 142, 185 146 C181 150, 176 151, 171 151 Z M39 49 L39 132 C39 133, 39 134, 40 135 C41 136, 41 136, 43 136 L171 136 C172 136, 173 136, 174 135 C175 134, 175 133, 175 132 L175 49 C175 48, 175 47, 174 47 C173 46, 172 45, 171 45 L43 45 C41 45, 41 46, 40 47 C39 47, 39 48, 39 49 Z M202 159 L220 159 L220 170 C220 173, 219 176, 215 178 C211 181, 207 182, 202 182 L12 182 C7 182, 3 181, -1 178 C-5 176, -7 173, -7 170 L-7 159 L12 159Z  M116 170 C118 170, 118 170, 118 168 C118 167, 118 167, 116 167 L97 167 C96 167, 96 167, 96 168 C96 170, 96 170, 97 170"/>
+</svg>
+</div>
+      <div id="CardService2-card-item1">Computer Lab</div>
+      <div id="CardService2-card-item2"></div>
+   </div>
+</div>
+<div id="wb_Bookmark2" style="display:inline-block;width:100%;z-index:11;">
+<div id="Bookmark2" style="visibility:hidden;"></div>
+
+</div>
+</div>
+<div class="col-3">
+<div id="wb_CardService3" style="display:flex;width:100%;z-index:12;" class="card">
+   <div id="CardService3-card-body">
+      <div id="CardService3-card-item0"><svg class="svg-icon" viewBox="0 0 212 212" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M61 156 L61 178 C61 181, 60 184, 58 186 C55 189, 53 190, 50 190 L12 190 C9 190, 6 189, 4 186 C1 184, 0 181, 0 178 L0 156 C0 152, 1 150, 4 148 C6 145, 9 144, 12 144 L50 144 C53 144, 55 145, 58 148 C60 150, 61 152, 61 156 Z M61 95 L61 118 C61 121, 60 124, 58 126 C55 128, 53 129, 50 129 L12 129 C9 129, 6 128, 4 126 C1 124, 0 121, 0 118 L0 95 C0 92, 1 89, 4 87 C6 85, 9 84, 12 84 L50 84 C53 84, 55 85, 58 87 C60 89, 61 92, 61 95 Z M137 156 L137 178 C137 181, 135 184, 133 186 C131 189, 128 190, 125 190 L87 190 C84 190, 82 189, 79 186 C77 184, 76 181, 76 178 L76 156 C76 152, 77 150, 79 148 C82 145, 84 144, 87 144 L125 144 C128 144, 131 145, 133 148 C135 150, 137 152, 137 156 Z M61 34 L61 57 C61 60, 60 63, 58 65 C55 67, 53 69, 50 69 L12 69 C9 69, 6 67, 4 65 C1 63, 0 60, 0 57 L0 34 C0 31, 1 29, 4 26 C6 24, 9 23, 12 23 L50 23 C53 23, 55 24, 58 26 C60 29, 61 31, 61 34 Z M137 95 L137 118 C137 121, 135 124, 133 126 C131 128, 128 129, 125 129 L87 129 C84 129, 82 128, 79 126 C77 124, 76 121, 76 118 L76 95 C76 92, 77 89, 79 87 C82 85, 84 84, 87 84 L125 84 C128 84, 131 85, 133 87 C135 89, 137 92, 137 95 Z M212 156 L212 178 C212 181, 211 184, 209 186 C207 189, 204 190, 201 190 L163 190 C160 190, 157 189, 155 186 C153 184, 152 181, 152 178 L152 156 C152 152, 153 150, 155 148 C157 145, 160 144, 163 144 L201 144 C204 144, 207 145, 209 148 C211 150, 212 152, 212 156 Z M137 34 L137 57 C137 60, 135 63, 133 65 C131 67, 128 69, 125 69 L87 69 C84 69, 82 67, 79 65 C77 63, 76 60, 76 57 L76 34 C76 31, 77 29, 79 26 C82 24, 84 23, 87 23 L125 23 C128 23, 131 24, 133 26 C135 29, 137 31, 137 34 Z M212 95 L212 118 C212 121, 211 124, 209 126 C207 128, 204 129, 201 129 L163 129 C160 129, 157 128, 155 126 C153 124, 152 121, 152 118 L152 95 C152 92, 153 89, 155 87 C157 85, 160 84, 163 84 L201 84 C204 84, 207 85, 209 87 C211 89, 212 92, 212 95 Z M212 34 L212 57 C212 60, 211 63, 209 65 C207 67, 204 69, 201 69 L163 69 C160 69, 157 67, 155 65 C153 63, 152 60, 152 57 L152 34 C152 31, 153 29, 155 26 C157 24, 160 23, 163 23 L201 23 C204 23, 207 24, 209 26 C211 29, 212 31, 212 34"/>
+</svg>
+</div>
+      <div id="CardService3-card-item1">Soccer Field</div>
+      <div id="CardService3-card-item2"></div>
+   </div>
+</div>
+<div id="wb_Bookmark3" style="display:inline-block;width:100%;z-index:13;">
+<div id="Bookmark3" style="visibility:hidden;"></div>
+
+</div>
+</div>
+<div class="col-4">
+<div id="wb_CardService4" style="display:flex;width:100%;z-index:14;" class="card">
+   <div id="CardService4-card-body">
+      <div id="CardService4-card-item0"><svg class="svg-icon" viewBox="0 0 212 212" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M212 148 L212 185 C212 189, 211 191, 209 194 C207 196, 204 197, 201 197 L163 197 C160 197, 157 196, 155 194 C153 191, 152 189, 152 185 L152 148 C152 144, 153 142, 155 140 C157 137, 160 136, 163 136 L174 136 L174 114 L114 114 L114 136 L125 136 C128 136, 131 137, 133 140 C135 142, 137 144, 137 148 L137 185 C137 189, 135 191, 133 194 C131 196, 128 197, 125 197 L87 197 C84 197, 82 196, 79 194 C77 191, 76 189, 76 185 L76 148 C76 144, 77 142, 79 140 C82 137, 84 136, 87 136 L99 136 L99 114 L38 114 L38 136 L50 136 C53 136, 55 137, 58 140 C60 142, 61 144, 61 148 L61 185 C61 189, 60 191, 58 194 C55 196, 53 197, 50 197 L12 197 C9 197, 6 196, 4 194 C1 191, 0 189, 0 185 L0 148 C0 144, 1 142, 4 140 C6 137, 9 136, 12 136 L23 136 L23 114 C23 109, 25 106, 28 103 C31 100, 34 98, 38 98 L99 98 L99 76 L87 76 C84 76, 82 75, 79 72 C77 70, 76 67, 76 64 L76 26 C76 23, 77 21, 79 18 C82 16, 84 15, 87 15 L125 15 C128 15, 131 16, 133 18 C135 21, 137 23, 137 26 L137 64 C137 67, 135 70, 133 72 C131 75, 128 76, 125 76 L114 76 L114 98 L174 98 C179 98, 182 100, 185 103 C188 106, 190 109, 190 114 L190 136 L201 136 C204 136, 207 137, 209 140 C211 142, 212 144, 212 148"/>
+</svg>
+</div>
+      <div id="CardService4-card-item1">Hall</div>
+      <div id="CardService4-card-item2"></div>
+   </div>
+</div>
+<div id="wb_Bookmark4" style="display:inline-block;width:100%;z-index:15;">
+<div id="Bookmark4" style="visibility:hidden;"></div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_header">
+<div id="header">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+<div id="wb_headerMenu" style="display:inline-block;width:689px;height:48px;z-index:16;">
+<ul id="headerMenu" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link headerMenu-effect" href="./index.html#home" target="_self">Home</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link headerMenu-effect" href="./sports.php" target="_self">About&nbsp;Us</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link headerMenu-effect" href="./about.html" target="_self">History</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link headerMenu-effect" href="./history.html" target="_self">Sports</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link headerMenu-effect" href="" target="_self">Policies</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link headerMenu-effect" href="#contactUs" target="_self">Contact&nbsp;Us</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_contactUs">
+<div id="contactUs">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Heading1" style="display:inline-block;width:100%;z-index:17;">
+<h1 id="Heading1">CONTACT US</h1>
+</div>
+<div id="wb_Text1">
+<br>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_contactUsForm">
+<div id="contactUsForm">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+<label for="EditboxName" id="Label1" style="display:block;width:100%;line-height:16px;z-index:19;">Name</label>
+<input type="text" id="EditboxName" style="display:block;width: 100%;height:41px;z-index:20;" name="name" value="" spellcheck="false">
+<label for="EditboxEmail" id="Label2" style="display:block;width:100%;line-height:16px;z-index:21;">Email</label>
+<input type="text" id="EditboxEmail" style="display:block;width: 100%;height:42px;z-index:22;" name="email" value="" spellcheck="false">
+<label for="ComboboxOption" id="Label3" style="display:block;width:100%;line-height:16px;z-index:23;">Select an option</label>
+<select name="option" size="1" id="ComboboxOption" style="display:block;width: 100%;height:42px;z-index:24;" autocomplete="off">
+<option selected value="option-1">Option 1</option>
+<option value="option-2">Option 2</option>
+<option value="option-3">Option 3</option>
+</select>
+<label for="TextAreaMessage" id="Label4" style="display:block;width:100%;line-height:16px;z-index:25;">Message</label>
+<textarea name="message" id="TextAreaMessage" style="display:block;width: 100%;;height:97px;z-index:26;" rows="4" cols="73" autocomplete="off" spellcheck="false"></textarea>
+<div id="wb_CheckboxUpdates" style="display:inline-block;width:34px;height:23px;z-index:27;">
+<input type="checkbox" id="CheckboxUpdates" name="Checkbox1" value="on" checked style="display:inline-block;"><label for="CheckboxUpdates"></label>
+</div>
+<label for="CheckboxUpdates" id="Label5" style="display:inline-block;width:330px;line-height:16px;z-index:28;"></label>
+<hr id="Line1" style="display:block;width: 100%;z-index:29;">
+<input type="submit" id="Button1" name="" value="Submit" style="display:inline-block;width:140px;height:42px;z-index:30;">
+</div>
+<div class="col-3">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_footer">
+<div id="footer">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text16">
+<p>Copyright © 2023 Stgemmas Primary School.&nbsp; All Rights Reserved</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="StickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:42;">
+<div id="wb_up-arrow" style="position:absolute;left:9px;top:8px;width:24px;height:24px;text-align:center;z-index:32;">
+<a href="./index.html#home"><div id="up-arrow"><i class="fa fa-angle-up"></i></div></a></div>
+</div>
+</body>
+</html>
